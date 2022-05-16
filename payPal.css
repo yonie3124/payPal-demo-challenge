@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 60%;
+    margin: auto;
+}
+
+/* Header */
+
+/* Header Top Part */
+#header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 3rem;
+}
+#header-top ul{
+    display: flex;
+    list-style: none;
+}
+#header-top li{
+    padding-left: 0.5rem;
+}
+#header-top li:first-child{
+    font-weight: bold;
+}
+#header-top li::after{
+    content: "|";
+    padding-left: 0.5rem;
+}
+#header-top li:last-child:after{
+    content: "";
+}
+
+/* Header Nav Bar */
+.nav-bar{
+    margin: auto 3rem;
+    display: flex;
+}
+.nav-bar button{
+    padding: 5px 10px;
+    background-color: rgb(2, 52, 103);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px 6px 3px 3px;
+}
+.nav-bar .btn-big{
+    height: 40px;
+    flex-grow: 1.4;
+    margin-right: 2px;
+}
+.nav-bar .btn-short{
+    height: 40px;
+    flex-grow: 1;
+    margin-right: 2px;
+}
+.nav-bar .active{
+    background-color: rgb(51, 101, 153);
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    bottom: 4px;
+}
+#nav-ribbon{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid black;
+    background-color: rgb(51, 101, 153);
+    position: relative;
+    bottom: 6px;
+    z-index: -1;
+}
+
+/* Main */
+main{
+    display: flex;
+}
+
+/* Side Bar */
+.side-bar{
+    width: 35%;
+    text-align: center;
+}
+.side-box{
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 10px 10px;
+    text-align: left;
+}
+.side-box>*{
+    margin-top: 10px;
+}
+.side-title{
+    background-color: rgb(204, 204, 204);
+    font-size: 1.2rem;
+    padding: 2px 10px;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 0;
+}
+.side-top, .side-mid{
+    background-color: rgb(238, 238, 238);
+}
+.side-top button{
+    padding: 5px 10px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.side-top i{
+    color: rgb(8, 132, 189);
+    margin-right: 5px;
+}
+
+.side-title a{
+    display: inline-block;
+    margin-left: 40%;
+    font-weight: normal;
+}
+
+.side-mid>p{
+    text-align: right;
+}
+.side-mid>a::before, .side-mid>a::after{
+    content: "''";
+    color: black;
+}
+.side-bot{
+    text-align: right;
+}
+.side-bot img{
+    display: inline-block;
+    width: 48%;
+}
+
+/* Main Container */
+.container{
+    width: 65%;
+}
+.contain a{
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 10px auto;
+}
+
+/* Main Container => Top Part */
+.contain-title{
+    color: rgb(28, 40, 150);
+    margin-bottom: 1rem;
+}
+.offer{
+    display: flex;
+    justify-content: space-between;
+}
+#offer-para{
+    background-color: rgb(49 97 146);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 3rem;
+    width: 25%;
+    height: 4rem;
+    padding: 1rem 2.5rem;
+    border-radius: 50%;
+}
+#member-rate{
+    font-weight: bold;
+    text-align: center;
+}
+#member-rate>a{
+    display: inline-block;
+    font-size: 1rem;
+}
+#sign-up-para{
+    background-color: rgb(255, 255, 204);
+    border: 2px solid rgb(204, 204, 51);
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#sign-up-para>a{
+    font-size: 1.2rem;
+}
+
+/* Main Container => Bottom Part */
+#spotlight{
+    border-bottom: 1px solid gray;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.businesses, .auctions{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 3rem;
+}
+.contain-bot img{
+    margin: 10px 10px;
+}
+.businesses p>a{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: auto;
+}
+
+/* Footer */
+footer{
+    margin: 2rem auto;
+    text-align: center;
+}
+.footer-links>a{
+    display: inline-block;
+    margin-right: 5px;
+}
+.footer-links>a::after{
+    content: "|";
+    margin-left: 5px;
+}
+.footer-links :last-child::after{
+    content: "";
+}
+footer p{
+    margin-top: 1rem;
+}
+.footer-advertise{
+    display: flex;
+    margin: 1rem 15%;
+    justify-content: space-between;
+}
